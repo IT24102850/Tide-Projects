@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Tide Projects — Architectural Excellence, Concept to Handover</title>
-<meta name="description" content="Tide Projects delivers precision-engineered project management, high-end residential builds, and bespoke architectural solutions across New Zealand." />
+<title>Tide Projects — Property Care, Maintenance &amp; Specialist Trades, Auckland NZ</title>
+<meta name="description" content="Tide Projects delivers trusted painting, decorating, industrial coatings, metal fabrication and landscaping services across Greater Auckland, for commercial, industrial and public sector clients." />
 
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io/apple-touch-icon.png">
@@ -24,15 +24,16 @@
     theme: {
       extend: {
         colors: {
-          ink: '#0A0D10',
-          panel: '#11161B',
-          panel2: '#161C22',
-          line: 'rgba(236,237,238,0.09)',
-          platinum: '#ECEDEE',
-          stone: '#9CA6AC',
-          kauri: '#C9A86A',
-          teal: '#2DD4BF',
-          blue: '#3B82F6',
+          paper: '#FFFFFF',
+          panel: '#F5F7FA',
+          panel2: '#EEF1F5',
+          line: 'rgba(11,18,32,0.10)',
+          ink: '#0B1220',
+          stone: '#57626D',
+          kauri: '#A9793F',
+          teal: '#12C4AC',
+          blue: '#2F6FED',
+          navy: '#0B1220',
         },
         fontFamily: {
           display: ['"Space Grotesk"', 'sans-serif'],
@@ -45,18 +46,18 @@
 </script>
 
 <style>
-  :root{ --grad: linear-gradient(95deg, #2DD4BF 0%, #3B82F6 100%); }
+  :root{ --grad: linear-gradient(115deg, #12C4AC 0%, #2F6FED 100%); }
+  .logo-glow{ filter: drop-shadow(0 8px 20px rgba(47,111,237,0.18)); }
   *{ scroll-behavior: smooth; }
-  html{ background:#0A0D10; }
-  body{ background:#0A0D10; color:#ECEDEE; font-family:'Inter',sans-serif; }
+  html{ background:#FFFFFF; }
+  body{ background:#FFFFFF; color:#12161A; font-family:'Inter',sans-serif; }
 
-  ::selection{ background:#2DD4BF; color:#0A0D10; }
+  ::selection{ background:#12C4AC; color:#FFFFFF; }
 
-  /* scrollbar */
   ::-webkit-scrollbar{ width:10px; }
-  ::-webkit-scrollbar-track{ background:#0A0D10; }
-  ::-webkit-scrollbar-thumb{ background:#1c2329; border-radius:8px; }
-  ::-webkit-scrollbar-thumb:hover{ background:#2a333b; }
+  ::-webkit-scrollbar-track{ background:#F6F7F5; }
+  ::-webkit-scrollbar-thumb{ background:#D8DBD5; border-radius:8px; }
+  ::-webkit-scrollbar-thumb:hover{ background:#C3C7BE; }
 
   .grad-text{
     background: var(--grad);
@@ -69,7 +70,7 @@
     position: relative;
     border: 1px solid transparent;
     background:
-      linear-gradient(#0A0D10,#0A0D10) padding-box,
+      linear-gradient(#FFFFFF,#FFFFFF) padding-box,
       var(--grad) border-box;
   }
 
@@ -81,32 +82,35 @@
   }
 
   /* nav */
+  #site-nav{ background: rgba(255,255,255,0.75); }
   #site-nav.scrolled{
-    background: rgba(10,13,16,0.72);
-    box-shadow: 0 1px 0 rgba(255,255,255,0.06);
+    background: rgba(255,255,255,0.92);
+    box-shadow: 0 1px 0 rgba(17,22,20,0.08), 0 8px 24px -12px rgba(17,22,20,0.10);
   }
-  .nav-link{ position:relative; color:#C7CCD1; transition:color .25s ease; }
+  .nav-link{ position:relative; color:#43504A; transition:color .25s ease; }
   .nav-link::after{
     content:''; position:absolute; left:0; bottom:-6px; height:1px; width:0%;
     background:var(--grad); transition: width .3s ease;
   }
-  .nav-link:hover{ color:#ECEDEE; }
+  .nav-link:hover{ color:#12161A; }
   .nav-link:hover::after{ width:100%; }
 
   .btn-grad{
     background: var(--grad);
-    transition: filter .25s ease, transform .25s ease;
+    box-shadow: 0 10px 25px -10px rgba(47,111,237,0.45);
+    transition: filter .25s ease, transform .25s ease, box-shadow .25s ease;
   }
-  .btn-grad:hover{ filter:brightness(1.12); transform: translateY(-1px); }
+  .btn-grad:hover{ filter:brightness(1.08); transform: translateY(-1px); box-shadow: 0 14px 30px -10px rgba(47,111,237,0.55); }
 
   .btn-outline-grad{
     border:1px solid transparent;
-    background: linear-gradient(#0A0D10,#0A0D10) padding-box, var(--grad) border-box;
+    background: linear-gradient(#FFFFFF,#FFFFFF) padding-box, var(--grad) border-box;
+    color:#12161A;
     transition: background .3s ease, color .3s ease;
   }
   .btn-outline-grad:hover{
     background: var(--grad) border-box;
-    color:#06080a;
+    color:#FFFFFF;
   }
 
   /* hero */
@@ -120,11 +124,10 @@
   }
   .hero-vignette{
     background:
-      linear-gradient(180deg, rgba(6,8,10,.55) 0%, rgba(6,8,10,.35) 28%, rgba(6,8,10,.72) 78%, #0A0D10 100%),
-      radial-gradient(120% 80% at 50% 0%, rgba(6,8,10,0) 0%, rgba(6,8,10,.45) 100%);
+      linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 22%, rgba(255,255,255,0.8) 82%, #FFFFFF 100%),
+      radial-gradient(120% 80% at 50% 20%, rgba(255,255,255,0) 0%, rgba(255,255,255,0.65) 100%);
   }
 
-  /* tide line divider */
   .tide-line{ width:100%; height:46px; display:block; overflow:visible; }
   .tide-path{
     stroke: url(#tideGrad);
@@ -135,15 +138,15 @@
   }
   @keyframes tide-flow{ to{ stroke-dashoffset:-260; } }
 
-  /* reveal */
   .reveal{ opacity:0; transform: translateY(22px); transition: opacity .8s ease, transform .8s ease; }
   .reveal.in{ opacity:1; transform: translateY(0); }
 
   .card{
-    background: linear-gradient(180deg, #11161B 0%, #0D1216 100%);
+    background: #FFFFFF;
     border:1px solid var(--line);
+    box-shadow: 0 2px 10px -6px rgba(17,22,20,0.06);
   }
-  .card:hover{ border-color: rgba(45,212,191,0.35); }
+  .card:hover{ border-color: rgba(12,140,125,0.35); box-shadow: 0 14px 30px -14px rgba(17,22,20,0.16); }
 
   .img-zoom{ overflow:hidden; }
   .img-zoom img{ transition: transform .8s cubic-bezier(.2,.7,.2,1), filter .8s ease; }
@@ -151,7 +154,6 @@
 
   .num-mono{ font-family:'IBM Plex Mono', monospace; }
 
-  /* mobile menu */
   #mobile-menu{
     clip-path: circle(0px at calc(100% - 38px) 38px);
     transition: clip-path .55s cubic-bezier(.2,.8,.2,1);
@@ -160,11 +162,11 @@
   .stagger-link{ opacity:0; transform: translateY(14px); transition: opacity .45s ease, transform .45s ease; }
   #mobile-menu.open .stagger-link{ opacity:1; transform: translateY(0); }
 
-  input::placeholder, textarea::placeholder{ color:#5b6670; }
-  input, textarea{ background:#0D1216; }
-  input:focus, textarea:focus{ outline:none; border-color:#2DD4BF; box-shadow:0 0 0 3px rgba(45,212,191,0.12); }
+  input::placeholder, textarea::placeholder{ color:#8A9289; }
+  input, textarea{ background:#FFFFFF; }
+  input:focus, textarea:focus{ outline:none; border-color:#12C4AC; box-shadow:0 0 0 3px rgba(18,196,172,0.14); }
 
-  a:focus-visible, button:focus-visible{ outline:2px solid #2DD4BF; outline-offset:3px; }
+  a:focus-visible, button:focus-visible{ outline:2px solid #12C4AC; outline-offset:3px; }
 
   @media (prefers-reduced-motion: reduce){
     .hero-bg{ animation:none; }
@@ -172,84 +174,80 @@
     .reveal{ transition:none; opacity:1; transform:none; }
   }
 
-  .marquee-track{ animation: marquee 28s linear infinite; }
-  @keyframes marquee{ from{ transform:translateX(0);} to{ transform:translateX(-50%);} }
+  .check-item{ display:flex; gap:.6rem; align-items:flex-start; }
+  .check-dot{ flex-shrink:0; width:6px; height:6px; border-radius:999px; background:var(--grad); margin-top:.55rem; }
 </style>
 </head>
 
 <body class="antialiased">
 
 <!-- ============ NAV ============ -->
-<header id="site-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md border-b border-white/5">
+<header id="site-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md border-b border-ink/5">
   <div class="max-w-7xl mx-auto px-5 md:px-8 h-20 flex items-center justify-between">
 
-    <!-- Logo -->
     <a href="#home" class="flex items-center gap-3 group shrink-0">
-      <img src="assets/images/logo-Photoroom.png" alt="Tide Projects Logo" class="h-10 w-auto">
+      <img src="assets/images/logo-Photoroom.png" alt="Tide Projects Logo" class="h-10 w-auto logo-glow">
+      <span class="font-display font-semibold text-lg text-ink hidden sm:inline">Tide Projects</span>
     </a>
 
-    <!-- Desktop nav -->
     <nav class="hidden lg:flex items-center gap-9 font-body text-[14.5px]">
       <a href="#home" class="nav-link">Home</a>
       <a href="#about" class="nav-link">About Us</a>
-      <a href="#guarantees" class="nav-link">Our Guarantees</a>
       <a href="#services" class="nav-link">Services</a>
-      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#resources" class="nav-link">Resources</a>
+      <a href="#current-projects" class="nav-link">Current Projects</a>
       <a href="#contact" class="nav-link">Contact</a>
     </nav>
 
-    <!-- CTA -->
     <div class="hidden lg:flex items-center">
-      <a href="#contact" class="btn-outline-grad rounded-full px-6 py-2.5 text-sm font-medium text-platinum">Request a Tender</a>
+      <a href="#contact" class="btn-outline-grad rounded-full px-6 py-2.5 text-sm font-medium">Request a Tender</a>
     </div>
 
-    <!-- Mobile toggle -->
     <button id="menu-btn" aria-label="Open menu" class="lg:hidden relative w-10 h-10 flex items-center justify-center">
-      <span id="bar1" class="absolute block w-6 h-[1.5px] bg-platinum transition-all duration-300" style="transform:translateY(-5px)"></span>
-      <span id="bar2" class="absolute block w-6 h-[1.5px] bg-platinum transition-all duration-300"></span>
-      <span id="bar3" class="absolute block w-6 h-[1.5px] bg-platinum transition-all duration-300" style="transform:translateY(5px)"></span>
+      <span id="bar1" class="absolute block w-6 h-[1.5px] bg-ink transition-all duration-300" style="transform:translateY(-5px)"></span>
+      <span id="bar2" class="absolute block w-6 h-[1.5px] bg-ink transition-all duration-300"></span>
+      <span id="bar3" class="absolute block w-6 h-[1.5px] bg-ink transition-all duration-300" style="transform:translateY(5px)"></span>
     </button>
   </div>
 </header>
 
 <!-- Mobile full-screen menu -->
-<div id="mobile-menu" class="fixed inset-0 z-40 bg-[#0A0D10] lg:hidden flex flex-col items-center justify-center gap-7">
-  <a href="#home" class="stagger-link font-display text-3xl text-platinum" style="transition-delay:.05s">Home</a>
-  <a href="#about" class="stagger-link font-display text-3xl text-platinum" style="transition-delay:.1s">About Us</a>
-  <a href="#guarantees" class="stagger-link font-display text-3xl text-platinum" style="transition-delay:.15s">Our Guarantees</a>
-  <a href="#services" class="stagger-link font-display text-3xl text-platinum" style="transition-delay:.2s">Services</a>
-  <a href="#portfolio" class="stagger-link font-display text-3xl text-platinum" style="transition-delay:.25s">Portfolio</a>
-  <a href="#contact" class="stagger-link font-display text-3xl text-platinum" style="transition-delay:.3s">Contact</a>
-  <a href="#contact" class="stagger-link btn-grad rounded-full px-8 py-3 text-sm font-semibold text-[#06080a] mt-4" style="transition-delay:.35s">Request a Tender</a>
+<div id="mobile-menu" class="fixed inset-0 z-40 bg-[#FFFFFF] lg:hidden flex flex-col items-center justify-center gap-7">
+  <a href="#home" class="stagger-link font-display text-3xl text-ink" style="transition-delay:.05s">Home</a>
+  <a href="#about" class="stagger-link font-display text-3xl text-ink" style="transition-delay:.1s">About Us</a>
+  <a href="#services" class="stagger-link font-display text-3xl text-ink" style="transition-delay:.15s">Services</a>
+  <a href="#resources" class="stagger-link font-display text-3xl text-ink" style="transition-delay:.2s">Resources</a>
+  <a href="#current-projects" class="stagger-link font-display text-3xl text-ink" style="transition-delay:.25s">Current Projects</a>
+  <a href="#contact" class="stagger-link font-display text-3xl text-ink" style="transition-delay:.3s">Contact</a>
+  <a href="#contact" class="stagger-link btn-grad rounded-full px-8 py-3 text-sm font-semibold text-white mt-4" style="transition-delay:.35s">Request a Tender</a>
 </div>
 
 <!-- ============ HERO ============ -->
 <section id="home" class="relative min-h-screen flex flex-col justify-end overflow-hidden">
-  <div class="absolute inset-0 hero-bg" style="background-image:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=80');"></div>
+  <div class="absolute inset-0 hero-bg" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80');"></div>
   <div class="absolute inset-0 hero-vignette"></div>
 
-  <div class="relative z-10 max-w-5xl mx-auto px-6 text-center pt-40 pb-10">
-    <p class="eyebrow grad-text mb-6">ARCHITECTURAL EXCELLENCE FROM CONCEPT TO HANDOVER</p>
-    <h1 class="font-display font-bold text-[2.6rem] leading-[1.08] sm:text-6xl md:text-7xl text-platinum">
-      We Build Legacies<br/>for Kiwi Families.
+  <div class="relative z-10 max-w-5xl mx-auto px-6 text-center pt-40 pb-10 hero-copy">
+    <p class="eyebrow text-ink mb-6">YOUR TRUSTED PARTNER FOR PROPERTY CARE AND MAINTENANCE</p>
+    <h1 class="font-display font-bold text-[2.6rem] leading-[1.08] sm:text-6xl md:text-7xl text-ink">
+      Quality Maintenance,<br/>Results Built to Last.
     </h1>
-    <p class="mt-7 max-w-2xl mx-auto text-stone text-base md:text-lg font-light leading-relaxed">
-      Precision-engineered project management, high-end residential builds, and bespoke architectural solutions across New Zealand.
+    <p class="mt-7 max-w-2xl mx-auto text-stone text-base md:text-lg leading-relaxed">
+      Trusted trade services for High-End Residential, Commercial and Industrial Sites across Greater Auckland. We deliver care and craftsmanship in every project.
     </p>
 
     <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-      <a href="#contact" class="btn-grad rounded-full px-8 py-3.5 text-sm font-semibold text-[#06080a] w-full sm:w-auto">Explore Our Plans</a>
-      <a href="#portfolio" class="btn-outline-grad rounded-full px-8 py-3.5 text-sm font-semibold text-platinum w-full sm:w-auto">View Our Portfolio</a>
+      <a href="#services" class="btn-grad rounded-full px-8 py-3.5 text-sm font-semibold text-white w-full sm:w-auto">Our Services</a>
+      <a href="#current-projects" class="btn-outline-grad rounded-full px-8 py-3.5 text-sm font-semibold w-full sm:w-auto">View Our Projects</a>
     </div>
   </div>
 
-  <!-- tide line + credit -->
   <div class="relative z-10 max-w-7xl mx-auto w-full px-6 pb-6">
     <svg class="tide-line" viewBox="0 0 1200 46" preserveAspectRatio="none">
       <defs>
         <linearGradient id="tideGrad" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stop-color="#2DD4BF"/>
-          <stop offset="1" stop-color="#3B82F6"/>
+          <stop offset="0" stop-color="#12C4AC"/>
+          <stop offset="1" stop-color="#2F6FED"/>
         </linearGradient>
       </defs>
       <path class="tide-path" d="M0 23 Q 50 5, 100 23 T 200 23 T 300 23 T 400 23 T 500 23 T 600 23 T 700 23 T 800 23 T 900 23 T 1000 23 T 1100 23 T 1200 23"/>
@@ -262,21 +260,21 @@
 </section>
 
 <!-- ============ TRUST STRIP ============ -->
-<section class="border-y border-white/5 bg-[#0B0F12] py-6 overflow-hidden">
+<section class="border-y border-ink/5 bg-panel py-6 overflow-hidden">
   <div class="flex whitespace-nowrap marquee-track w-max">
-    <div class="flex items-center gap-16 px-8 text-stone/70 font-mono text-xs tracking-[0.2em]">
-      <span>MASTER BUILD GUARANTEE</span><span class="text-teal">•</span>
-      <span>FIXED-PRICE CONTRACTS</span><span class="text-teal">•</span>
-      <span>LICENSED BUILDING PRACTITIONERS</span><span class="text-teal">•</span>
-      <span>NZ-WIDE PROJECT DELIVERY</span><span class="text-teal">•</span>
-      <span>ON-TIME HANDOVER</span><span class="text-teal">•</span>
+    <div class="flex items-center gap-16 px-8 text-stone font-mono text-xs tracking-[0.2em]">
+      <span>DECADE OF SERVICE</span><span class="text-teal">•</span>
+      <span>WORKSAFE NZ COMPLIANT</span><span class="text-teal">•</span>
+      <span>SECURITY-CHECKED TEAMS</span><span class="text-teal">•</span>
+      <span>GOVERNMENT &amp; COUNCIL APPROVED</span><span class="text-teal">•</span>
+      <span>KIWI OWNED &amp; OPERATED</span><span class="text-teal">•</span>
     </div>
-    <div class="flex items-center gap-16 px-8 text-stone/70 font-mono text-xs tracking-[0.2em]" aria-hidden="true">
-      <span>MASTER BUILD GUARANTEE</span><span class="text-teal">•</span>
-      <span>FIXED-PRICE CONTRACTS</span><span class="text-teal">•</span>
-      <span>LICENSED BUILDING PRACTITIONERS</span><span class="text-teal">•</span>
-      <span>NZ-WIDE PROJECT DELIVERY</span><span class="text-teal">•</span>
-      <span>ON-TIME HANDOVER</span><span class="text-teal">•</span>
+    <div class="flex items-center gap-16 px-8 text-stone font-mono text-xs tracking-[0.2em]" aria-hidden="true">
+      <span>DECADE OF SERVICE</span><span class="text-teal">•</span>
+      <span>WORKSAFE NZ COMPLIANT</span><span class="text-teal">•</span>
+      <span>SECURITY-CHECKED TEAMS</span><span class="text-teal">•</span>
+      <span>GOVERNMENT &amp; COUNCIL APPROVED</span><span class="text-teal">•</span>
+      <span>KIWI OWNED &amp; OPERATED</span><span class="text-teal">•</span>
     </div>
   </div>
 </section>
@@ -284,219 +282,428 @@
 <!-- ============ ABOUT ============ -->
 <section id="about" class="py-28 md:py-36 px-6 max-w-7xl mx-auto">
   <div class="grid lg:grid-cols-2 gap-16 items-center">
-    <div class="reveal img-zoom rounded-2xl overflow-hidden border border-white/5 order-2 lg:order-1">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Tide Projects custom home build in New Zealand" class="w-full h-[460px] object-cover" />
+    <div class="reveal img-zoom rounded-2xl overflow-hidden border border-ink/5 order-2 lg:order-1">
+      <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80" alt="Tide Projects team at a New Zealand commercial site" class="w-full h-[460px] object-cover" />
     </div>
     <div class="reveal order-1 lg:order-2">
       <p class="eyebrow grad-text mb-4">ABOUT TIDE PROJECTS</p>
-      <h2 class="font-display font-bold text-3xl md:text-4xl text-platinum leading-tight">Built on precision.<br/>Grounded in trust.</h2>
+      <h2 class="font-display font-bold text-3xl md:text-4xl text-ink leading-tight">Who We Are</h2>
       <p class="mt-6 text-stone leading-relaxed font-light">
-        Tide Projects is a New Zealand-based project management and residential construction company. We partner with Kiwi families from the first concept sketch through to the final handover, managing every consent, contractor and material decision so the build experience stays calm, transparent, and on schedule.
+        Tide Projects is a trusted provider of qualified maintenance services across commercial, industrial and public sectors, contributing meaningfully to New Zealand's civil structures and reinforcing the fabric of its communities.
       </p>
       <p class="mt-4 text-stone leading-relaxed font-light">
-        Our team blends architectural insight with hands-on site management, delivering bespoke homes that hold their value — structurally and aesthetically — for generations.
+        With a deep respect for the nation's heritage and culture, we are committed to preserving what makes New Zealand unique. For over a decade we've proudly supported and served local communities, delivering Interior &amp; Exterior Decorating, Special Coating Systems, Metal Fabrication &amp; Installation, and Urban Maintenance — every project carried out with care, compliance and craftsmanship.
+      </p>
+      <p class="mt-4 text-stone leading-relaxed font-light">
+        We're proud to have contributed to major Government and Council facilities, Schools and Universities, Civil Structures, and high-end construction projects, making maintenance hassle-free and delivering results built to last.
       </p>
 
-      <div class="grid grid-cols-3 gap-6 mt-10 pt-8 border-t border-white/5">
+      <div class="grid grid-cols-3 gap-6 mt-10 pt-8 border-t border-ink/10">
         <div>
-          <p class="font-display font-bold text-3xl text-platinum">120<span class="grad-text">+</span></p>
-          <p class="text-xs text-stone mt-1 font-mono tracking-wide">HOMES DELIVERED</p>
+          <p class="font-display font-bold text-3xl text-ink">10<span class="grad-text">+</span></p>
+          <p class="text-xs text-stone mt-1 font-mono tracking-wide">YEARS OF SERVICE</p>
         </div>
         <div>
-          <p class="font-display font-bold text-3xl text-platinum">14</p>
-          <p class="text-xs text-stone mt-1 font-mono tracking-wide">REGIONS SERVED</p>
+          <p class="font-display font-bold text-3xl text-ink">6<span class="grad-text">+</span></p>
+          <p class="text-xs text-stone mt-1 font-mono tracking-wide">SKILLED TEAM</p>
         </div>
         <div>
-          <p class="font-display font-bold text-3xl text-platinum">98<span class="grad-text">%</span></p>
-          <p class="text-xs text-stone mt-1 font-mono tracking-wide">ON-TIME HANDOVER</p>
+          <p class="font-display font-bold text-3xl text-ink">100<span class="grad-text">%</span></p>
+          <p class="text-xs text-stone mt-1 font-mono tracking-wide">SAFETY COMPLIANT</p>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Vision & Mission -->
+  <div class="grid md:grid-cols-2 gap-6 mt-24">
+    <div class="reveal card rounded-2xl p-8 md:p-10">
+      <p class="eyebrow grad-text mb-3">VISION</p>
+      <h3 class="font-display font-semibold text-2xl text-ink">Setting the standard for property care.</h3>
+      <p class="mt-4 text-stone font-light leading-relaxed">Tide Projects aims to be the top provider of property &amp; maintenance services, known for quality, innovation, and sustainability. We focus on delivering excellent workmanship and lasting results that improve every space we touch.</p>
+    </div>
+    <div class="reveal card rounded-2xl p-8 md:p-10" style="transition-delay:.08s">
+      <p class="eyebrow grad-text mb-3">MISSION</p>
+      <h3 class="font-display font-semibold text-2xl text-ink">Integrity, respect, clear communication.</h3>
+      <p class="mt-4 text-stone font-light leading-relaxed">Guided by our core values, we continually push the boundaries of what's possible in the commercial, industrial and public sectors, redefining what professionalism looks like for our clients.</p>
+    </div>
+  </div>
 </section>
 
-<!-- ============ GUARANTEES ============ -->
-<section id="guarantees" class="py-28 md:py-36 px-6 bg-[#0B0F12] border-y border-white/5">
+<!-- ============ GUARANTEES / VALUES ============ -->
+<section id="guarantees" class="py-28 md:py-36 px-6 bg-panel border-y border-ink/5">
   <div class="max-w-7xl mx-auto">
     <div class="text-center max-w-2xl mx-auto reveal">
-      <p class="eyebrow grad-text mb-4">OUR GUARANTEES</p>
-      <h2 class="font-display font-bold text-3xl md:text-4xl text-platinum">Certainty, in writing.</h2>
-      <p class="mt-4 text-stone font-light">Four commitments that protect your budget, your timeline, and your peace of mind.</p>
+      <p class="eyebrow grad-text mb-4">OUR VALUES</p>
+      <h2 class="font-display font-bold text-3xl md:text-4xl text-ink">Our Commitment to You</h2>
+      <p class="mt-4 text-stone font-light">Guided by our core values, we continually push the boundaries of what's possible.</p>
     </div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-16">
       <div class="reveal card rounded-2xl p-7 transition-colors duration-300">
         <svg class="w-9 h-9 text-kauri mb-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M9 14l2 2 4-4m5-2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        <h3 class="font-display font-semibold text-lg text-platinum">Fixed-Price Certainty</h3>
-        <p class="text-sm text-stone mt-2 font-light leading-relaxed">No hidden variations. The price you sign is the price you pay.</p>
+        <h3 class="font-display font-semibold text-lg text-ink">Quality Workmanship</h3>
+        <p class="text-sm text-stone mt-2 font-light leading-relaxed">Work with passion and precision to ensure every job meets the highest quality standards.</p>
       </div>
       <div class="reveal card rounded-2xl p-7 transition-colors duration-300" style="transition-delay:.08s">
-        <svg class="w-9 h-9 text-kauri mb-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        <h3 class="font-display font-semibold text-lg text-platinum">On-Time Handover</h3>
-        <p class="text-sm text-stone mt-2 font-light leading-relaxed">Milestone-tracked programmes with delay-cover built into every contract.</p>
+        <svg class="w-9 h-9 text-kauri mb-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+        <h3 class="font-display font-semibold text-lg text-ink">Trusted Provider</h3>
+        <p class="text-sm text-stone mt-2 font-light leading-relaxed">Strive to be Auckland's most trusted and positively regarded property maintenance service provider.</p>
       </div>
       <div class="reveal card rounded-2xl p-7 transition-colors duration-300" style="transition-delay:.16s">
-        <svg class="w-9 h-9 text-kauri mb-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 4v5c0 5-3.4 8.6-8 9-4.6-.4-8-4-8-9V7l8-4z"/></svg>
-        <h3 class="font-display font-semibold text-lg text-platinum">Master Build Guarantee</h3>
-        <p class="text-sm text-stone mt-2 font-light leading-relaxed">Independently backed cover for materials, workmanship and deposit protection.</p>
+        <svg class="w-9 h-9 text-kauri mb-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V4a2 2 0 012-2h8z" /></svg>
+        <h3 class="font-display font-semibold text-lg text-ink">Exceptional Service</h3>
+        <p class="text-sm text-stone mt-2 font-light leading-relaxed">Deliver exceptional customer service that builds lasting client relationships through clear communication.</p>
       </div>
       <div class="reveal card rounded-2xl p-7 transition-colors duration-300" style="transition-delay:.24s">
-        <svg class="w-9 h-9 text-kauri mb-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-6h6v6m-9 0h12M5 11l7-7 7 7"/></svg>
-        <h3 class="font-display font-semibold text-lg text-platinum">Transparent Reporting</h3>
-        <p class="text-sm text-stone mt-2 font-light leading-relaxed">Live budget and progress reporting, so you always know where your build stands.</p>
+        <svg class="w-9 h-9 text-kauri mb-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.373 3.373 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+        <h3 class="font-display font-semibold text-lg text-ink">Innovation</h3>
+        <p class="text-sm text-stone mt-2 font-light leading-relaxed">To set new standards of excellence through clear &amp; consistent communication with clients, redefining what professionalism looks like.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ SERVICES ============ -->
+<!-- ============ SERVICES OVERVIEW ============ -->
 <section id="services" class="py-28 md:py-36 px-6 max-w-7xl mx-auto">
   <div class="text-center max-w-2xl mx-auto reveal">
     <p class="eyebrow grad-text mb-4">SERVICES</p>
-    <h2 class="font-display font-bold text-3xl md:text-4xl text-platinum">End-to-end delivery, one accountable team.</h2>
+    <h2 class="font-display font-bold text-3xl md:text-4xl text-ink">Property Care &amp; Maintenance Services</h2>
   </div>
 
   <div class="grid md:grid-cols-2 gap-6 mt-16">
-    <div class="reveal group relative rounded-2xl overflow-hidden border border-white/5 h-[340px]">
-      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Project management"/>
-      <div class="absolute inset-0 bg-gradient-to-t from-[#06080a] via-[#06080a]/40 to-transparent"></div>
+    <a href="#painting" class="reveal group relative rounded-2xl overflow-hidden border border-ink/5 h-[340px]">
+      <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1000&q=80" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Interior and exterior painting"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/30 to-transparent"></div>
       <div class="absolute bottom-0 p-7">
         <span class="num-mono text-xs text-teal">01</span>
-        <h3 class="font-display font-semibold text-2xl text-platinum mt-2">Project Management</h3>
-        <p class="text-sm text-stone mt-2 font-light max-w-sm">Single point of accountability across consents, contractors, scheduling and budget.</p>
+        <h3 class="font-display font-semibold text-2xl text-white mt-2">Painting &amp; Decorating</h3>
+        <p class="text-sm text-white/80 mt-2 font-light max-w-sm">Interior &amp; exterior painting for commercial, industrial, and large-scale properties.</p>
       </div>
-    </div>
+    </a>
 
-    <div class="reveal group relative rounded-2xl overflow-hidden border border-white/5 h-[340px]" style="transition-delay:.08s">
-      <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=1000&q=80" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Custom home builds"/>
-      <div class="absolute inset-0 bg-gradient-to-t from-[#06080a] via-[#06080a]/40 to-transparent"></div>
+    <a href="#coatings" class="reveal group relative rounded-2xl overflow-hidden border border-ink/5 h-[340px]" style="transition-delay:.08s">
+      <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Industrial and specialist coatings"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/30 to-transparent"></div>
       <div class="absolute bottom-0 p-7">
         <span class="num-mono text-xs text-teal">02</span>
-        <h3 class="font-display font-semibold text-2xl text-platinum mt-2">Custom Home Builds</h3>
-        <p class="text-sm text-stone mt-2 font-light max-w-sm">Bespoke residential construction engineered for New Zealand sites and climate.</p>
+        <h3 class="font-display font-semibold text-2xl text-white mt-2">Industrial &amp; Special Coatings</h3>
+        <p class="text-sm text-white/80 mt-2 font-light max-w-sm">High-performance systems that resist heat, fire, chemicals, corrosion and wear.</p>
       </div>
-    </div>
+    </a>
 
-    <div class="reveal group relative rounded-2xl overflow-hidden border border-white/5 h-[340px]" style="transition-delay:.16s">
-      <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=80" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Architectural design"/>
-      <div class="absolute inset-0 bg-gradient-to-t from-[#06080a] via-[#06080a]/40 to-transparent"></div>
+    <a href="#fabrication" class="reveal group relative rounded-2xl overflow-hidden border border-ink/5 h-[340px]" style="transition-delay:.16s">
+      <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1000&q=80" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Metal fabrication and welding"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/30 to-transparent"></div>
       <div class="absolute bottom-0 p-7">
         <span class="num-mono text-xs text-teal">03</span>
-        <h3 class="font-display font-semibold text-2xl text-platinum mt-2">Architectural Design</h3>
-        <p class="text-sm text-stone mt-2 font-light max-w-sm">Concept-to-consent design that balances light, land and long-term liveability.</p>
+        <h3 class="font-display font-semibold text-2xl text-white mt-2">Metal Fabrication</h3>
+        <p class="text-sm text-white/80 mt-2 font-light max-w-sm">Structural steelwork, custom fabrication, and commercial welding solutions.</p>
+      </div>
+    </a>
+
+    <a href="#landscaping" class="reveal group relative rounded-2xl overflow-hidden border border-ink/5 h-[340px]" style="transition-delay:.24s">
+      <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1000&q=80" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Landscaping and garden care"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/30 to-transparent"></div>
+      <div class="absolute bottom-0 p-7">
+        <span class="num-mono text-xs text-teal">04</span>
+        <h3 class="font-display font-semibold text-2xl text-white mt-2">Landscaping &amp; Garden Care</h3>
+        <p class="text-sm text-white/80 mt-2 font-light max-w-sm">Garden maintenance, lawn care, tree trimming, and pressure washing.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ============ PAINTING & DECORATING DETAIL ============ -->
+<section id="painting" class="py-24 md:py-32 px-6 max-w-7xl mx-auto">
+  <div class="grid lg:grid-cols-2 gap-16 items-center">
+    <div class="reveal">
+      <p class="eyebrow grad-text mb-4">01 — PAINTING &amp; DECORATING</p>
+      <h2 class="font-display font-bold text-3xl md:text-4xl text-ink leading-tight">A decade of trusted painting &amp; decorating.</h2>
+      <p class="mt-6 text-stone leading-relaxed font-light">
+        We don't just meet expectations — we future-proof your assets with finishes that perform, protect, and elevate your space. From Offices and Retail Outlets to Schools, Council Buildings and Government Facilities, as well as Hospitals, Healthcare Centres, High-end Aged-Care Facilities and Hotels.
+      </p>
+      <p class="mt-4 text-stone leading-relaxed font-light">
+        We uphold environmentally responsible practices and ensure clean, well-managed worksites through careful planning and resource-efficiency, significantly reducing material waste.
+      </p>
+      <div class="grid sm:grid-cols-2 gap-3 mt-8">
+        <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Roof &amp; exterior painting</p></div>
+        <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Scheduled maintenance painting</p></div>
+        <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">High-pressure &amp; chemical washing</p></div>
+        <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Graffiti removal</p></div>
+      </div>
+    </div>
+    <div class="reveal img-zoom rounded-2xl overflow-hidden border border-ink/5">
+      <img src="https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=1200&q=80" alt="Roof and exterior painting" class="w-full h-[460px] object-cover"/>
+    </div>
+  </div>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-16">
+    <div class="reveal card rounded-2xl overflow-hidden">
+      <div class="img-zoom h-44 overflow-hidden"><img src="https://images.unsplash.com/photo-1585128792020-803d29415281?auto=format&fit=crop&w=700&q=80" alt="High-pressure washing of driveway" class="w-full h-full object-cover"/></div>
+      <div class="p-6">
+        <h3 class="font-display font-semibold text-lg text-ink">High-Pressure &amp; Chemical Washing</h3>
+        <p class="text-sm text-stone mt-2 font-light leading-relaxed">Deep-cleaning that removes dirt, mould, moss and mildew — perfect for pre-paint preparation or ongoing maintenance.</p>
+      </div>
+    </div>
+    <div class="reveal card rounded-2xl overflow-hidden" style="transition-delay:.08s">
+      <div class="img-zoom h-44 overflow-hidden"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=700&q=80" alt="Graffiti removal on wall" class="w-full h-full object-cover"/></div>
+      <div class="p-6">
+        <h3 class="font-display font-semibold text-lg text-ink">Graffiti Removal</h3>
+        <p class="text-sm text-stone mt-2 font-light leading-relaxed">Fast, effective graffiti removal using eco-friendly products, restoring surfaces without causing damage.</p>
+      </div>
+    </div>
+    <div class="reveal card rounded-2xl overflow-hidden" style="transition-delay:.16s">
+      <div class="img-zoom h-44 overflow-hidden"><img src="assets/images/shedu.jpg" alt="Scheduled property maintenance painting" class="w-full h-full object-cover"/></div>
+      <div class="p-6">
+        <h3 class="font-display font-semibold text-lg text-ink">Scheduled Maintenance</h3>
+        <p class="text-sm text-stone mt-2 font-light leading-relaxed">Regular repainting programs that protect property value and reduce long-term maintenance costs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INDUSTRIAL & SPECIAL COATINGS ============ -->
+<section id="coatings" class="py-24 md:py-32 px-6 bg-panel border-y border-ink/5">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="reveal img-zoom rounded-2xl overflow-hidden border border-ink/5 order-2 lg:order-1">
+        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=80" alt="Industrial steel structure coating" class="w-full h-[460px] object-cover"/>
+      </div>
+      <div class="reveal order-1 lg:order-2">
+        <p class="eyebrow grad-text mb-4">02 — INDUSTRIAL COATING</p>
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-ink leading-tight">Protection engineered for demanding environments.</h2>
+        <p class="mt-6 text-stone leading-relaxed font-light">
+          High-performance industrial painting and blasting that protects machinery, steel structures, piping, and plant equipment. Our systems resist heat, fire, chemicals, corrosion and wear, keeping essential assets safe, durable, and operational.
+        </p>
+        <p class="mt-4 text-stone leading-relaxed font-light">We proudly partner with Manufacturing and Warehouse facilities, Hospitals and Government facilities, and Community &amp; Civil Structures — council buildings, community centres, sports venues, shopping centres and iconic facades.</p>
       </div>
     </div>
 
-    <div class="reveal group relative rounded-2xl overflow-hidden border border-white/5 h-[340px]" style="transition-delay:.24s">
-      <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1000&q=80" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Renovations and extensions"/>
-      <div class="absolute inset-0 bg-gradient-to-t from-[#06080a] via-[#06080a]/40 to-transparent"></div>
-      <div class="absolute bottom-0 p-7">
-        <span class="num-mono text-xs text-teal">04</span>
-        <h3 class="font-display font-semibold text-2xl text-platinum mt-2">Renovations &amp; Extensions</h3>
-        <p class="text-sm text-stone mt-2 font-light max-w-sm">Considered upgrades that respect the original character of your home.</p>
+    <div class="mt-24 grid lg:grid-cols-2 gap-16 items-center">
+      <div class="reveal">
+        <p class="eyebrow grad-text mb-4">SPECIAL COATINGS</p>
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-ink leading-tight">Advanced surface solutions for civil infrastructure.</h2>
+        <p class="mt-6 text-stone leading-relaxed font-light">
+          Specialist coatings for Public Buildings, Walkways, Community Facilities and high-traffic Parking Buildings, offering superior resistance to fading, cracking and moisture ingress while preserving safety and aesthetic appeal.
+        </p>
+        <div class="grid sm:grid-cols-2 gap-3 mt-8">
+          <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Fire-rated &amp; intumescent coatings</p></div>
+          <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">UV-resistant finishes</p></div>
+          <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Membrane waterproofing systems</p></div>
+          <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Epoxy treatments</p></div>
+          <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Textured &amp; anti-slip finishes</p></div>
+          <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Distressed &amp; decorative effects</p></div>
+          <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Rust-effect finishes &amp; corrosion repair</p></div>
+          <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Protective coatings for steel, concrete &amp; timber</p></div>
+        </div>
+      </div>
+      <div class="reveal img-zoom rounded-2xl overflow-hidden border border-ink/5">
+        <img src="https://images.unsplash.com/photo-1772300164438-f73307d3b645?auto=format&fit=crop&w=1200&q=80" alt="Epoxy floor coating in an industrial warehouse" class="w-full h-[460px] object-cover"/>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============ METAL FABRICATION ============ -->
+<section id="fabrication" class="py-24 md:py-32 px-6 max-w-7xl mx-auto">
+  <div class="grid lg:grid-cols-2 gap-16 items-center">
+    <div class="reveal">
+      <p class="eyebrow grad-text mb-4">03 — METAL FABRICATION</p>
+      <h2 class="font-display font-bold text-3xl md:text-4xl text-ink leading-tight">Structural steelwork &amp; custom fabrication.</h2>
+      <p class="mt-6 text-stone leading-relaxed font-light">
+        Supported by fully equipped mobile welding teams, we provide efficient on-site fabrication, installation and repair services tailored to each project's requirements — combining technical expertise with quality craftsmanship.
+      </p>
+      <div class="grid sm:grid-cols-2 gap-3 mt-8">
+        <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Structural elements — columns, beams, staircases</p></div>
+        <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Handrails &amp; balustrades</p></div>
+        <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Fences &amp; gates, including security fencing</p></div>
+        <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Professional installation services</p></div>
+        <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Metal repair works &amp; vintage restoration</p></div>
+      </div>
+    </div>
+    <div class="reveal img-zoom rounded-2xl overflow-hidden border border-ink/5">
+      <img src="https://images.unsplash.com/photo-1526634140919-468dc3ae3870?auto=format&fit=crop&w=1200&q=80" alt="Structural steel fabrication and welding" class="w-full h-[460px] object-cover"/>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LANDSCAPING ============ -->
+<section id="landscaping" class="py-24 md:py-32 px-6 bg-panel border-y border-ink/5">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+    <div class="reveal img-zoom rounded-2xl overflow-hidden border border-ink/5 order-2 lg:order-1">
+      <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=80" alt="Landscaping and garden maintenance" class="w-full h-[460px] object-cover"/>
+    </div>
+    <div class="reveal order-1 lg:order-2">
+      <p class="eyebrow grad-text mb-4">04 — LANDSCAPING &amp; GARDEN CARE</p>
+      <h2 class="font-display font-bold text-3xl md:text-4xl text-ink leading-tight">Healthy, vibrant outdoor spaces, all year round.</h2>
+      <p class="mt-6 text-stone leading-relaxed font-light">
+        Regular lawn care, expert tree removal, precise hedge trimming — we work with commercial clients to enhance the health, safety and beauty of every landscape we work in.
+      </p>
+      <div class="grid sm:grid-cols-1 gap-3 mt-8">
+        <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Routine garden care &amp; seasonal maintenance</p></div>
+        <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Lawn mowing &amp; eco-friendly weed control</p></div>
+        <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Leaf fall clean-up &amp; green waste removal</p></div>
+        <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Surface pressure washing for driveways, patios &amp; decks</p></div>
+        <div class="check-item"><span class="check-dot"></span><p class="text-sm text-stone font-light">Tree trimming &amp; hedge shaping</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESOURCES ============ -->
+<section id="resources" class="py-28 md:py-36 px-6 max-w-7xl mx-auto">
+  <div class="text-center max-w-2xl mx-auto reveal">
+    <p class="eyebrow grad-text mb-4">OUR RESOURCES</p>
+    <h2 class="font-display font-bold text-3xl md:text-4xl text-ink">Equipped to deliver, at any scale.</h2>
+    <p class="mt-4 text-stone font-light">We're equipped with the tools, vehicles and workforce to confidently deliver projects of all scales across Auckland.</p>
+  </div>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-16">
+    <div class="reveal card rounded-2xl p-7"><h3 class="font-display font-semibold text-lg text-ink">Skilled Workforce</h3><p class="text-sm text-stone mt-2 font-light leading-relaxed">More than 6 skilled team members ready to deploy across sites.</p></div>
+    <div class="reveal card rounded-2xl p-7" style="transition-delay:.06s"><h3 class="font-display font-semibold text-lg text-ink">Traffic Management</h3><p class="text-sm text-stone mt-2 font-light leading-relaxed">Level 2 Traffic Management Truck with a CAT A certified STMS.</p></div>
+    <div class="reveal card rounded-2xl p-7" style="transition-delay:.12s"><h3 class="font-display font-semibold text-lg text-ink">Earthworks &amp; Access</h3><p class="text-sm text-stone mt-2 font-light leading-relaxed">Excavator/digger for site prep, plus a cherrypicker for elevated access.</p></div>
+    <div class="reveal card rounded-2xl p-7 sm:col-span-2 lg:col-span-3" style="transition-delay:.18s"><h3 class="font-display font-semibold text-lg text-ink">Experienced EWP &amp; Site-Safe Tradespeople</h3><p class="text-sm text-stone mt-2 font-light leading-relaxed">Ready for high-access, high-safety environments across commercial and industrial sites.</p></div>
   </div>
 </section>
 
 <!-- ============ PROCESS ============ -->
-<section class="py-28 md:py-36 px-6 bg-[#0B0F12] border-y border-white/5">
+<section class="py-28 md:py-36 px-6 bg-panel border-y border-ink/5">
   <div class="max-w-7xl mx-auto">
     <div class="text-center max-w-2xl mx-auto reveal">
       <p class="eyebrow grad-text mb-4">HOW WE WORK</p>
-      <h2 class="font-display font-bold text-3xl md:text-4xl text-platinum">Five stages. One continuous tide.</h2>
+      <h2 class="font-display font-bold text-3xl md:text-4xl text-ink">Our Process. Clear and Simple.</h2>
     </div>
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-px bg-white/5 mt-16 rounded-2xl overflow-hidden">
-      <div class="reveal bg-[#0B0F12] p-7">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-px bg-ink/10 mt-16 rounded-2xl overflow-hidden">
+      <div class="reveal bg-white p-7">
         <p class="num-mono text-3xl grad-text">01</p>
-        <h3 class="font-display font-semibold text-platinum mt-4">Concept</h3>
-        <p class="text-sm text-stone mt-2 font-light">Brief, budget and site analysis.</p>
+        <h3 class="font-display font-semibold text-ink mt-4">Consult</h3>
+        <p class="text-sm text-stone mt-2 font-light">Initial discussion of your needs, budget, and site specifics.</p>
       </div>
-      <div class="reveal bg-[#0B0F12] p-7" style="transition-delay:.06s">
+      <div class="reveal bg-white p-7" style="transition-delay:.06s">
         <p class="num-mono text-3xl grad-text">02</p>
-        <h3 class="font-display font-semibold text-platinum mt-4">Design</h3>
-        <p class="text-sm text-stone mt-2 font-light">Architectural drawings and material selection.</p>
+        <h3 class="font-display font-semibold text-ink mt-4">Quote</h3>
+        <p class="text-sm text-stone mt-2 font-light">Transparent, detailed quote outlining the scope and cost.</p>
       </div>
-      <div class="reveal bg-[#0B0F12] p-7" style="transition-delay:.12s">
+      <div class="reveal bg-white p-7" style="transition-delay:.12s">
         <p class="num-mono text-3xl grad-text">03</p>
-        <h3 class="font-display font-semibold text-platinum mt-4">Consent</h3>
-        <p class="text-sm text-stone mt-2 font-light">Council approval managed end-to-end.</p>
+        <h3 class="font-display font-semibold text-ink mt-4">Schedule</h3>
+        <p class="text-sm text-stone mt-2 font-light">Project scheduling and coordination of our expert team.</p>
       </div>
-      <div class="reveal bg-[#0B0F12] p-7" style="transition-delay:.18s">
+      <div class="reveal bg-white p-7" style="transition-delay:.18s">
         <p class="num-mono text-3xl grad-text">04</p>
-        <h3 class="font-display font-semibold text-platinum mt-4">Build</h3>
-        <p class="text-sm text-stone mt-2 font-light">On-site delivery with live reporting.</p>
+        <h3 class="font-display font-semibold text-ink mt-4">Execute</h3>
+        <p class="text-sm text-stone mt-2 font-light">On-site work performed safely and efficiently to the highest standard.</p>
       </div>
-      <div class="reveal bg-[#0B0F12] p-7" style="transition-delay:.24s">
+      <div class="reveal bg-white p-7" style="transition-delay:.24s">
         <p class="num-mono text-3xl grad-text">05</p>
-        <h3 class="font-display font-semibold text-platinum mt-4">Handover</h3>
-        <p class="text-sm text-stone mt-2 font-light">Final inspection and keys in hand.</p>
+        <h3 class="font-display font-semibold text-ink mt-4">Complete</h3>
+        <p class="text-sm text-stone mt-2 font-light">Final inspection and project sign-off, ensuring your satisfaction.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ PORTFOLIO ============ -->
-<section id="portfolio" class="py-28 md:py-36 px-6 max-w-7xl mx-auto">
+<section id="current-projects" class="py-28 md:py-36 px-6 max-w-7xl mx-auto">
   <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 reveal">
     <div>
-      <p class="eyebrow grad-text mb-4">PORTFOLIO</p>
-      <h2 class="font-display font-bold text-3xl md:text-4xl text-platinum">Recently completed.</h2>
+      <p class="eyebrow grad-text mb-4">CURRENT PROJECTS</p>
+      <h2 class="font-display font-bold text-3xl md:text-4xl text-ink">Recently completed.</h2>
     </div>
     <div class="flex flex-wrap gap-2 font-mono text-xs">
-      <span class="px-4 py-2 rounded-full grad-bg text-[#06080a] font-medium">All</span>
-      <span class="px-4 py-2 rounded-full border border-white/10 text-stone">Auckland</span>
-      <span class="px-4 py-2 rounded-full border border-white/10 text-stone">Queenstown</span>
-      <span class="px-4 py-2 rounded-full border border-white/10 text-stone">Wellington</span>
+      <span class="px-4 py-2 rounded-full grad-bg text-white font-medium">All</span>
+      <span class="px-4 py-2 rounded-full border border-ink/15 text-stone">Auckland</span>
+      <span class="px-4 py-2 rounded-full border border-ink/15 text-stone">Queenstown</span>
+      <span class="px-4 py-2 rounded-full border border-ink/15 text-stone">Wellington</span>
     </div>
   </div>
 
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-14">
-    <div class="reveal img-zoom group relative rounded-2xl overflow-hidden border border-white/5 h-72">
+    <div class="reveal img-zoom group relative rounded-2xl overflow-hidden border border-ink/5 h-72">
       <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=900&q=80" class="w-full h-full object-cover" alt="Coastal residence, Auckland"/>
-      <div class="absolute inset-0 bg-gradient-to-t from-[#06080a]/90 via-transparent to-transparent flex items-end p-5">
-        <div><p class="font-display font-semibold text-platinum">Coastal Residence</p><p class="text-xs text-stone font-mono mt-1">AUCKLAND</p></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent flex items-end p-5">
+        <div><p class="font-display font-semibold text-white">Coastal Residence</p><p class="text-xs text-white/75 font-mono mt-1">AUCKLAND</p></div>
       </div>
     </div>
-    <div class="reveal img-zoom group relative rounded-2xl overflow-hidden border border-white/5 h-72" style="transition-delay:.06s">
+    <div class="reveal img-zoom group relative rounded-2xl overflow-hidden border border-ink/5 h-72" style="transition-delay:.06s">
       <img src="https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?auto=format&fit=crop&w=900&q=80" class="w-full h-full object-cover" alt="Alpine retreat, Queenstown"/>
-      <div class="absolute inset-0 bg-gradient-to-t from-[#06080a]/90 via-transparent to-transparent flex items-end p-5">
-        <div><p class="font-display font-semibold text-platinum">Alpine Retreat</p><p class="text-xs text-stone font-mono mt-1">QUEENSTOWN</p></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent flex items-end p-5">
+        <div><p class="font-display font-semibold text-white">Alpine Retreat</p><p class="text-xs text-white/75 font-mono mt-1">QUEENSTOWN</p></div>
       </div>
     </div>
-    <div class="reveal img-zoom group relative rounded-2xl overflow-hidden border border-white/5 h-72" style="transition-delay:.12s">
+    <div class="reveal img-zoom group relative rounded-2xl overflow-hidden border border-ink/5 h-72" style="transition-delay:.12s">
       <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=80" class="w-full h-full object-cover" alt="Hillside villa, Wellington"/>
-      <div class="absolute inset-0 bg-gradient-to-t from-[#06080a]/90 via-transparent to-transparent flex items-end p-5">
-        <div><p class="font-display font-semibold text-platinum">Hillside Villa</p><p class="text-xs text-stone font-mono mt-1">WELLINGTON</p></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent flex items-end p-5">
+        <div><p class="font-display font-semibold text-white">Hillside Villa</p><p class="text-xs text-white/75 font-mono mt-1">WELLINGTON</p></div>
       </div>
     </div>
-    <div class="reveal img-zoom group relative rounded-2xl overflow-hidden border border-white/5 h-72" style="transition-delay:.18s">
+    <div class="reveal img-zoom group relative rounded-2xl overflow-hidden border border-ink/5 h-72" style="transition-delay:.18s">
       <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80" class="w-full h-full object-cover" alt="Modern family home, Auckland"/>
-      <div class="absolute inset-0 bg-gradient-to-t from-[#06080a]/90 via-transparent to-transparent flex items-end p-5">
-        <div><p class="font-display font-semibold text-platinum">Modern Family Home</p><p class="text-xs text-stone font-mono mt-1">AUCKLAND</p></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent flex items-end p-5">
+        <div><p class="font-display font-semibold text-white">Modern Family Home</p><p class="text-xs text-white/75 font-mono mt-1">AUCKLAND</p></div>
       </div>
     </div>
-    <div class="reveal img-zoom group relative rounded-2xl overflow-hidden border border-white/5 h-72" style="transition-delay:.24s">
+    <div class="reveal img-zoom group relative rounded-2xl overflow-hidden border border-ink/5 h-72" style="transition-delay:.24s">
       <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=900&q=80" class="w-full h-full object-cover" alt="Lakeside build, Queenstown"/>
-      <div class="absolute inset-0 bg-gradient-to-t from-[#06080a]/90 via-transparent to-transparent flex items-end p-5">
-        <div><p class="font-display font-semibold text-platinum">Lakeside Build</p><p class="text-xs text-stone font-mono mt-1">QUEENSTOWN</p></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent flex items-end p-5">
+        <div><p class="font-display font-semibold text-white">Lakeside Build</p><p class="text-xs text-white/75 font-mono mt-1">QUEENSTOWN</p></div>
       </div>
     </div>
-    <div class="reveal group relative rounded-2xl overflow-hidden border border-white/5 h-72 flex flex-col items-center justify-center text-center p-6 card" style="transition-delay:.3s">
-      <p class="font-display font-semibold text-xl text-platinum">See the full portfolio</p>
+    <div class="reveal group relative rounded-2xl overflow-hidden border border-ink/5 h-72 flex flex-col items-center justify-center text-center p-6 card" style="transition-delay:.3s">
+      <p class="font-display font-semibold text-xl text-ink">See the full portfolio</p>
       <p class="text-sm text-stone font-light mt-2">Request our latest project book.</p>
-      <a href="#contact" class="mt-5 btn-outline-grad rounded-full px-6 py-2.5 text-sm font-medium text-platinum">Get in Touch</a>
+      <a href="#contact" class="mt-5 btn-outline-grad rounded-full px-6 py-2.5 text-sm font-medium">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HEALTH & SAFETY ============ -->
+<section id="safety" class="py-28 md:py-36 px-6 bg-panel border-y border-ink/5">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-5 gap-14 items-start">
+      <div class="lg:col-span-2 reveal">
+        <p class="eyebrow grad-text mb-4">HEALTH &amp; SAFETY</p>
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-ink leading-tight">Safety is foundational to how we operate.</h2>
+        <p class="mt-5 text-stone font-light leading-relaxed">We are deeply committed to protecting our team, our contractors, and the wider community through a proactive, systems-based approach. As part of our commitment to a safe and responsible workplace, random drug testing is conducted among employees.</p>
+        <div class="reveal img-zoom rounded-2xl overflow-hidden border border-ink/5 mt-8">
+          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=900&q=80" alt="Site safety and PPE compliance" class="w-full h-56 object-cover"/>
+        </div>
+      </div>
+
+      <div class="lg:col-span-3 grid sm:grid-cols-2 gap-5">
+        <div class="reveal card rounded-2xl p-7 transition-colors duration-300">
+          <h3 class="font-display font-semibold text-lg text-ink">Comprehensive Risk Management</h3>
+          <p class="text-sm text-stone mt-2 font-light leading-relaxed">A rigorous process to identify, assess, and control health, environmental, and safety risks across all project phases.</p>
+        </div>
+        <div class="reveal card rounded-2xl p-7 transition-colors duration-300" style="transition-delay:.06s">
+          <h3 class="font-display font-semibold text-lg text-ink">Active Site Oversight</h3>
+          <p class="text-sm text-stone mt-2 font-light leading-relaxed">Regular site inspections, both scheduled and unannounced, to monitor compliance and reinforce safe practices.</p>
+        </div>
+        <div class="reveal card rounded-2xl p-7 transition-colors duration-300" style="transition-delay:.12s">
+          <h3 class="font-display font-semibold text-lg text-ink">Safe Work Method Statements</h3>
+          <p class="text-sm text-stone mt-2 font-light leading-relaxed">Detailed SWMS developed for each task, outlining procedures, hazards, and control measures.</p>
+        </div>
+        <div class="reveal card rounded-2xl p-7 transition-colors duration-300" style="transition-delay:.18s">
+          <h3 class="font-display font-semibold text-lg text-ink">Mandatory PPE &amp; Training</h3>
+          <p class="text-sm text-stone mt-2 font-light leading-relaxed">Full PPE is mandatory on all sites, with comprehensive induction and ongoing training for every team member.</p>
+        </div>
+        <div class="reveal card rounded-2xl p-7 sm:col-span-2 transition-colors duration-300" style="transition-delay:.24s">
+          <h3 class="font-display font-semibold text-lg text-ink">Critical Risk Culture</h3>
+          <p class="text-sm text-stone mt-2 font-light leading-relaxed">Fostering a mindset to proactively identify, manage, and verify potential hazards before any work commences — across every daily operation.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ============ TESTIMONIAL ============ -->
-<section class="py-24 px-6 bg-[#0B0F12] border-y border-white/5">
+<section class="py-24 px-6 bg-white">
   <div class="max-w-3xl mx-auto text-center reveal">
     <svg class="w-9 h-9 mx-auto text-teal/70 mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.17 6A5.17 5.17 0 002 11.17V18h6.83v-6.83H4.83a2.17 2.17 0 012.17-2.17h.17V6h-.17zm10 0A5.17 5.17 0 0012 11.17V18h6.83v-6.83h-4a2.17 2.17 0 012.17-2.17h.17V6h-.17z"/></svg>
-    <p class="font-display text-2xl md:text-3xl text-platinum leading-snug font-medium">
-      "Tide Projects managed our entire build with a level of clarity we didn't think was possible. Every milestone, every cost — exactly as promised."
+    <p class="font-display text-2xl md:text-3xl text-ink leading-snug font-medium">
+      "Tide Projects managed our project with a level of clarity we didn't think was possible. Every milestone, every cost — exactly as promised."
     </p>
     <p class="mt-6 text-sm text-stone font-mono">JAMES &amp; HELEN R. — REMUERA, AUCKLAND</p>
   </div>
@@ -508,7 +715,7 @@
 
     <div class="lg:col-span-2 reveal">
       <p class="eyebrow grad-text mb-4">CONTACT</p>
-      <h2 class="font-display font-bold text-3xl md:text-4xl text-platinum leading-tight">Let's talk about<br/>your build.</h2>
+      <h2 class="font-display font-bold text-3xl md:text-4xl text-ink leading-tight">Let's talk about<br/>your project.</h2>
       <p class="mt-5 text-stone font-light leading-relaxed">Request a tender or send through your plans — our team responds within one business day.</p>
 
       <div class="mt-10 space-y-6">
@@ -518,7 +725,7 @@
           </div>
           <div>
             <p class="text-xs text-stone font-mono tracking-wide">EMAIL</p>
-            <a href="mailto:Tender@tideprojects.co.nz" class="text-platinum font-medium hover:text-teal transition-colors">Tender@tideprojects.co.nz</a>
+            <a href="mailto:Tender@tideprojects.co.nz" class="text-ink font-medium hover:text-teal transition-colors">Tender@tideprojects.co.nz</a>
           </div>
         </div>
         <div class="flex items-start gap-4">
@@ -527,7 +734,7 @@
           </div>
           <div>
             <p class="text-xs text-stone font-mono tracking-wide">PHONE</p>
-            <a href="tel:0226087718" class="text-platinum font-medium hover:text-teal transition-colors">022 608 7718</a>
+            <a href="tel:0226087718" class="text-ink font-medium hover:text-teal transition-colors">022 608 7718</a>
           </div>
         </div>
         <div class="flex items-start gap-4">
@@ -536,7 +743,7 @@
           </div>
           <div>
             <p class="text-xs text-stone font-mono tracking-wide">BUSINESS MANAGER</p>
-            <p class="text-platinum font-medium">Mo Hafsal</p>
+            <p class="text-ink font-medium">Mo Hafsal</p>
           </div>
         </div>
       </div>
@@ -545,30 +752,30 @@
     <form class="lg:col-span-3 reveal card rounded-2xl p-7 md:p-10 grid sm:grid-cols-2 gap-5" style="transition-delay:.1s" onsubmit="event.preventDefault(); this.querySelector('.form-success').classList.remove('hidden');">
       <div class="sm:col-span-1">
         <label class="text-xs text-stone font-mono tracking-wide">FULL NAME</label>
-        <input type="text" required placeholder="Jane Smith" class="w-full mt-2 rounded-lg border border-white/10 px-4 py-3 text-sm text-platinum"/>
+        <input type="text" required placeholder="Jane Smith" class="w-full mt-2 rounded-lg border border-ink/15 px-4 py-3 text-sm text-ink"/>
       </div>
       <div class="sm:col-span-1">
         <label class="text-xs text-stone font-mono tracking-wide">PHONE</label>
-        <input type="tel" placeholder="022 000 0000" class="w-full mt-2 rounded-lg border border-white/10 px-4 py-3 text-sm text-platinum"/>
+        <input type="tel" placeholder="022 000 0000" class="w-full mt-2 rounded-lg border border-ink/15 px-4 py-3 text-sm text-ink"/>
       </div>
       <div class="sm:col-span-2">
         <label class="text-xs text-stone font-mono tracking-wide">EMAIL</label>
-        <input type="email" required placeholder="you@email.co.nz" class="w-full mt-2 rounded-lg border border-white/10 px-4 py-3 text-sm text-platinum"/>
+        <input type="email" required placeholder="you@email.co.nz" class="w-full mt-2 rounded-lg border border-ink/15 px-4 py-3 text-sm text-ink"/>
       </div>
       <div class="sm:col-span-2">
         <label class="text-xs text-stone font-mono tracking-wide">PROJECT DETAILS</label>
-        <textarea rows="4" placeholder="Tell us about your site, budget and timeline..." class="w-full mt-2 rounded-lg border border-white/10 px-4 py-3 text-sm text-platinum resize-none"></textarea>
+        <textarea rows="4" placeholder="Tell us about your site, budget and timeline..." class="w-full mt-2 rounded-lg border border-ink/15 px-4 py-3 text-sm text-ink resize-none"></textarea>
       </div>
       <div class="sm:col-span-2 flex items-center justify-between flex-wrap gap-4">
         <p class="form-success hidden text-xs text-teal font-mono">Thanks — your tender request has been queued.</p>
-        <button type="submit" class="btn-grad ml-auto rounded-full px-8 py-3.5 text-sm font-semibold text-[#06080a]">Submit Request</button>
+        <button type="submit" class="btn-grad ml-auto rounded-full px-8 py-3.5 text-sm font-semibold text-white">Submit Request</button>
       </div>
     </form>
   </div>
 </section>
 
 <!-- ============ FOOTER ============ -->
-<footer class="border-t border-white/5 px-6 py-12">
+<footer class="border-t border-ink/10 px-6 py-12 bg-panel">
   <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
     <a href="#home" class="flex items-center gap-3">
       <img src="assets/images/logo-Photoroom.png" alt="Tide Projects Logo" class="h-8 w-auto">
@@ -576,9 +783,8 @@
     <nav class="flex flex-wrap gap-x-7 gap-y-2 text-sm text-stone justify-center">
       <a href="#home" class="hover:text-teal transition-colors">Home</a>
       <a href="#about" class="hover:text-teal transition-colors">About Us</a>
-      <a href="#guarantees" class="hover:text-teal transition-colors">Our Guarantees</a>
       <a href="#services" class="hover:text-teal transition-colors">Services</a>
-      <a href="#portfolio" class="hover:text-teal transition-colors">Portfolio</a>
+      <a href="#current-projects" class="hover:text-teal transition-colors">Current Projects</a>
       <a href="#contact" class="hover:text-teal transition-colors">Contact</a>
     </nav>
     <p class="text-xs text-stone/70 font-mono">© 2026 TIDE PROJECTS NZ. ALL RIGHTS RESERVED.</p>
@@ -586,13 +792,11 @@
 </footer>
 
 <script>
-  // nav scroll state
   const nav = document.getElementById('site-nav');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 20);
   });
 
-  // mobile menu
   const menuBtn = document.getElementById('menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
   const bars = [document.getElementById('bar1'), document.getElementById('bar2'), document.getElementById('bar3')];
@@ -607,7 +811,6 @@
   menuBtn.addEventListener('click', () => toggleMenu(false));
   document.querySelectorAll('#mobile-menu a').forEach(a => a.addEventListener('click', () => toggleMenu(true)));
 
-  // scroll reveal
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); observer.unobserve(e.target); } });
   }, { threshold: 0.15 });
