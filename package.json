@@ -1,0 +1,6 @@
+{
+  "name": "tide-projects-static",
+  "version": "1.0.0",
+  "description": "A static HTML and CSS website.",
+  "private": true
+}
